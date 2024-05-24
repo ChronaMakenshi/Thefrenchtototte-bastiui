@@ -1,7 +1,21 @@
-{% extends 'base.html.twig' %}
+{% extends './base.html.twig' %}
 
 {% block title %}Hello WelcomeController!{% endblock %}
 
 {% block body %}
-    {{ include('layout/header.html.twig') }}
+    <header id="topscroll">
+        {{ include('layout/header.html.twig') }}
+    </header>
+    <main>
+        {{ include('layout/presentation.html.twig') }}
+        {{ include('layout/plugntote.html.twig') }}
+        {{ include('layout/lestotottes.html.twig') }}
+        {{ include('layout/sucotersanssoucis.html.twig') }}
+        {{ include('layout/spotify.html.twig') }}
+        {{ include('layout/mynthos.html.twig') }}
+        {{ include('layout/ilsontadorer.html.twig') }}
+    </main>
+    <footer>
+        {{ include('layout/footer.html.twig') }}
+    </footer>
 {% endblock %}

@@ -9,6 +9,9 @@ export default defineConfig({
         /* react(), // if you're using React */
         symfonyPlugin(),
     ],
+    server: {
+        hmr: true // Activer le rechargement à chaud
+    },
     build: {
         rollupOptions: {
             input: {
