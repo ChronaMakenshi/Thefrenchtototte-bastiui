@@ -320,6 +320,9 @@ video{
   margin-bottom: 15px;
   padding-top: 130%;
   font-family: Tartuffo-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
   color: #5D4043;
 }
 
@@ -327,6 +330,9 @@ video{
   font-size: 14px;
   font-family: Gustavo-Regular, sans-serif;
   color: #816A6C;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 150%;
 }
 
@@ -351,6 +357,9 @@ video{
   font-size: 32px;
   margin-bottom: 15px;
   font-family: Tartuffo-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
   color: #5D4043;
 }
 
@@ -391,6 +400,9 @@ video{
   font-size: 32px;
   margin-bottom: 15px;
   font-family: Tartuffo-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
   color: #5D4043;
 }
 
@@ -442,6 +454,9 @@ video{
   font-size: 32px;
   margin-bottom: 15px;
   font-family: Tartuffo-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
   color: #5D4043;
 }
 
@@ -490,6 +505,9 @@ video{
   margin-bottom: 15px;
   font-size: 32px;
   font-family: Tartuffo-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
   color: #5D4043;
 }
 
@@ -528,6 +546,9 @@ video{
 
 .block6 h3 {
   font-family: Tartuffo-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
   color: #5D4043;
   margin-bottom: 15px;
   font-size: 32px;
@@ -647,7 +668,7 @@ video{
   border: none;
   margin-top: 40px;
   background-color: transparent;
-  width: 150px;
+  width: 400px;
   height: 40px;
   color: #5D4043;
   font-family: Gustavo-Bold, sans-serif;
@@ -1768,9 +1789,19 @@ video{
     visibility: hidden;
   }
 
-  .soustitle{
-    font-size: 40px;
+  .h1r{
+    max-width: 345px;
     width: 100%;
+    margin-left: 20%;
+  }
+
+  .h1r span{
+    font-size: 24px;
+  }
+
+  .soustitle{
+    font-size: 60px;
+    width: 500px;
   }
 
   .navbar .h1r{
@@ -1778,7 +1809,7 @@ video{
   }
 
   .title{
-    font-size: 21px;
+    font-size: 42px;
   }
 
   .navbar{
@@ -1792,12 +1823,13 @@ video{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 393px;
+    width: 600px;
     height: 118px;
   }
 
   .button2 {
-    width: 393px;
+    width: 600px;
+    font-size: 20px;
   }
 
   .vertical-line{
@@ -1808,7 +1840,7 @@ video{
     margin: auto;
     height: 400px;
     width: 2px;
-    top: 150%;
+    top: 190%;
     left: 50%;
   }
 
@@ -1863,6 +1895,28 @@ video{
     justify-content: center;
     height: 440px;
     margin-top: -100px;
+  }
+
+  .nonbredeserveur{
+    margin-top: 46px;
+    margin-right: 2%;
+    width: 170px;
+  }
+
+  .nonbredeserveur p {
+    margin-top: -10px;
+    font-family: Gustavo-Regular, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #816A6C;
+    font-size: 18px;
+  }
+
+  .paraserveur{
+    font-family: Gustavo-Regular, sans-serif;
+    color: #816A6C;
+    width: 400px;
+    font-size: 18px;
   }
 
   .pod:hover .podcard[data-type="bubble"],
@@ -2016,15 +2070,17 @@ video{
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 400px;
-    height: 2400px;
+    max-width: 900px;
+    height: 100%;
+    margin-top: 45%;
+    gap: 60px;
   }
 
   .block1 {
     position: relative;
     width: 100%;
-    max-width: 400px;
-    height: 425px;
+    max-width: 900px;
+    height: 900px;
     margin: auto;
   }
 
@@ -2035,6 +2091,7 @@ video{
   .block1::before{
     margin-top: 5%;
     width: 100%;
+    background-size: 700px;
     background-image:  url('image/TransCote3.png');
   }
 
@@ -2045,59 +2102,78 @@ video{
 
   .block1 h3, .block1 p{
     width: 100%;
-    max-width: 309px;
+    max-width: 609px;
   }
 
   .block1 h3{
     padding-top: 60%;
+    font-size: 68px;
+  }
+
+  .block1 p{
+    font-size: 32px;
   }
 
   .block2{
     background-image: url("image/image141.png");
-    background-size: 400px;
+    background-size: 900px;
     margin: auto;
     width: 100%;
-    max-width: 400px;
-    height: 425px;
+    max-width: 900px;
+    height: 900px;
   }
 
   .block2:hover{
     background-image: url("image/image151.png");
-    background-size: 400px;
+    background-size: 900px;
   }
 
   .block2 h3, .block2 p{
-    width: 320px;
+    width: 100%;
+    max-width: 609px;
     padding-left: 0;
   }
 
   .block2 h3{
-    padding-top: 65%;
+    padding-top: 70%;
+    font-size: 68px;
+  }
+
+  .block2 p{
+    font-size: 32px;
   }
 
   .block3 {
     width: 100%;
-    max-width: 400px;
-    height: 425px;
+    max-width: 900px;
+    height: 900px;
     margin: auto;
     background-image: url("image/Frame98.svg");
-    background-size: 400px;
+    background-size: 900px;
   }
 
   .block3 h3, .block3 p{
-    width: 216px;
+    width: 100%;
+    max-width: 609px;
   }
 
   .block3 h3{
     padding-top: 60%;
+    font-size: 68px;
+    padding-left: 6%;
+  }
+
+  .block3 p{
+    font-size: 32px;
+    padding-left: 6%;
   }
 
   .block4 {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 900px;
     margin: auto;
-    height: 425px;
+    height: 900px;
   }
 
   .block4:hover::before{
@@ -2109,24 +2185,39 @@ video{
 
   .block4::before{
     height: 425px;
+    background-size: 900px;
+  }
+
+  .block4 h3, .block4 p{
+    width: 100%;
+    max-width: 609px;
   }
 
   .block4 h3{
     padding-top: 10%;
+    font-size: 68px;
+    padding-left: 6%;
+  }
+
+  .block4 p{
+    font-size: 32px;
+    padding-left: 6%;
   }
 
   .block5{
     width: 100%;
-    max-width: 400px;
+    max-width: 900px;
+    height: 900px;
     margin: auto;
-    height: 425px;
     overflow: hidden;
   }
 
   .block5::before{
     background-image: none;
-    width: 400%;
-    height: 400px;
+    width: 100%;
+    max-width: 900px;
+    height: 900px;
+    background-size: 900px;
   }
 
   .block5:hover::before{
@@ -2142,11 +2233,27 @@ video{
   #follow-image {
     position: absolute;
     top: 40%;
-    left: -265px;
+    left: -50px;
     transform: translateY(-50%);
-    width: 1002px;
+    width: 2000px;
     height: auto;
     cursor: pointer;
+  }
+
+  .block5 h3, .block5 p{
+    width: 100%;
+    max-width: 609px;
+  }
+
+  .block5 h3{
+    padding-top: 10%;
+    font-size: 68px;
+    padding-left: 6%;
+  }
+
+  .block5 p{
+    font-size: 32px;
+    padding-left: 6%;
   }
 
   .block6{
@@ -2156,16 +2263,28 @@ video{
     align-items: center;
     gap: 25%;
     width: 100%;
-    max-width: 400px;
-    height: 200px;
+    max-width: 900px;
+    height: 500px;
   }
 
   .block6 h3, .block6 p{
-    width: 216px;
+    width: 100%;
+    max-width: 509px;
+  }
+
+  .block6 h3{
+    padding-top: 0;
+    font-size: 68px;
+    padding-left: 6%;
+  }
+
+  .block6 p{
+    font-size: 32px;
+    padding-left: 6%;
   }
 
   .block6 .flag{
-    margin-top: -10px;
+    margin-top: -140px;
     margin-right: 0;
   }
 
@@ -2187,30 +2306,37 @@ video{
   }
 
   .tech{
-    width: 400px;
+    width: 900px;
   }
 
   .tech h3{
-    font-size: 56px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    font-size: 90px;
+    margin-left: 5%;
+    margin-bottom: 60px;
   }
 
   .coltote p{
-    width: 300px;
+    width: 800px;
+    font-size: 20px;
     margin: auto;
+    margin-bottom: 30px;
   }
 
+
+  .button3 {
+    font-size: 32px;
+  }
+
+
   .tote {
-    width: 361px;
-    height: 250px;
+    width: 900px;
+    height: 600px;
     background-image:  url('image/PodSwap.gif');
-    background-size: 361px;
+    background-size: 900px;
   }
 
   .h3r span{
-    left: 75%;
+    left: 48%;
   }
 
   .sucoter{
@@ -2254,29 +2380,46 @@ video{
   }
 
   .spotify{
-    width: 400px;
+    width: 900px;
   }
 
   .videospotify{
-    width: 361px;
-    height: 220px;
+    width: 900px;
+    height: 100%;
   }
 
   .connect{
     flex-direction: column;
     align-items: flex-start;
     margin: auto;
-    width: 361px;
+    width: 861px;
     margin-left: 10%;
   }
 
   .connect h3{
-    width: 292px;
+    width: 400px;
     height: 142px;
+    font-size: 70px;
   }
 
   .connect  p:nth-child(3) {
-    width: 292px;
+    width: 600px;
+    font-size: 32px;
+  }
+
+  .btnspotify{
+    font-size: 32px;
+    width: 350px;
+  }
+
+  .btnspotify svg{
+    font-size: 32px;
+  }
+
+  .connect  p:nth-child(2) {
+    width: 600px;
+    height: 40px;
+    font-size: 32px;
   }
 
   .mynthos{
@@ -2284,16 +2427,37 @@ video{
     max-width: 400px;
     flex-direction: column;
     align-items: normal;
-    margin-top: 20%;
-    margin-left: 35%;
-    margin-right: 35%;
-    width: 361px;
+    margin-top: 30%;
+    margin-left: 18%;
+    margin-right: 15%;
   }
 
   .jusdemynthos{
     margin-top: 20%;
     margin-left: -10%;
     margin-right: 0;
+    font-size: 60px;
+  }
+
+  .jusdemynthos p:nth-child(2){
+    font-size: 32px;
+    width: 400px;
+  }
+
+  .ingmynthos {
+    background-size: 600px;
+    width: 600px;
+    height: 700px;
+  }
+
+  .jusdemynthos p:nth-child(3){
+    font-size: 32px;
+    width: 800px;
+  }
+
+  .jusdemynthos h3{
+    width: 600px;
+    font-size: 90px;
   }
 
   .star-container {
@@ -2304,7 +2468,7 @@ video{
   .adorer{
     width: 100%;
     max-width: 400px;
-    margin-top: 15%;
+    margin-top: 50%;
     margin-left: auto;
     margin-right: auto;
   }

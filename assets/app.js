@@ -161,8 +161,8 @@ function onMouseMove(e) {
     const mouseX = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
 
     // Définit les limites pour la position left
-    const minLeft = -650;
-    const maxLeft = 50;
+    const minLeft = -146;
+    const maxLeft = 23;
 
     // Calcule la nouvelle position de l'image sur l'axe X (de droite à gauche)
     const containerWidth = rect.width;
@@ -179,7 +179,7 @@ function onMouseMove(e) {
     }
 
     // Met à jour la position de l'image
-    image.style.left = `${newPosX}px`;
+    image.style.left = `${newPosX}%`;
 }
 
 document.addEventListener('mousedown', function(e) {
