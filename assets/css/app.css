@@ -236,13 +236,71 @@ video{
 /*  height: 48px;*/
 /*}*/
 
-.button {
-  background-color: #5D4043;
+.button-wrapper {
+  position: relative;
+  display: inline-block;
   width: 110px;
   height: 40px;
-  color: #EECDBF;
+  overflow: hidden;
+}
+
+.button {
+  background-color: rgba(93, 64, 67, .2); /* Couleur initiale marron */
+  width: 110px;
+  height: 40px;
+  color: rgba(238, 205, 191, 1);
+  text-edge: cap;
   border: none;
-  z-index: 2;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 1s ease;
+  font-weight: bold;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -200%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(34deg, rgba(0,7,175,1) 25%, rgba(0,7,175,1) 25%, rgba(0,102,255,1) 25%, rgba(0,102,255,1) 50%, rgba(198,4,27,1) 50%, rgba(198,4,27,1) 75%, rgba(255,90,90,1) 75%, rgba(255,90,90,1) 100%);
+  transition: left 0.5s ease;
+}
+
+.button-wrapper:hover .button::before {
+  left: 100%; /* Déplace le dégradé hors de vue pour révéler la couleur noire */
+}
+
+.button-wrapper:hover .button {
+  background-color: rgba(0, 0, 0, 0.5); /* Changement de couleur au survol */
+}
+
+.button a {
+  position: relative;
+  z-index: 1;
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  z-index: -1;
 }
 
 .button2 {
@@ -283,7 +341,7 @@ video{
   height: 612px;
   border-radius: 10px;
   grid-area: block1;
-  background: linear-gradient(0deg, rgba(0, 215, 255, 0.09567577030812324) 0%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(0deg, rgb(239, 241, 253) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .block1::before{
@@ -1471,7 +1529,7 @@ video{
 }
 
 
-.pack1{
+.pack1:hover{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1479,6 +1537,52 @@ video{
   gap: 65px;
   width: 392px;
   border: 1px solid #30171B;
+}
+
+.pack1:hover h3{
+  width: 289px;
+  height: 13px;
+  font-family: Gustavo-Bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 170%;
+  color: #30171B;
+}
+
+.pack1:hover p{
+  width: 289px;
+  height: 10px;
+  font-family: Gustavo-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 170%;
+  color: #30171B;
+}
+
+.pack1:hover span {
+  width: 47px;
+  height: 10px;
+  font-family: 'Gustavo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 170%;
+  color: #30171B;
+}
+
+.pack1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  gap: 65px;
+  width: 392px;
+}
+
+.pack1:nth-child(3){
+  gap: 20px;
 }
 
 .pack1 h3{
@@ -1489,7 +1593,7 @@ video{
   font-weight: 700;
   font-size: 20px;
   line-height: 170%;
-  color: #30171B;
+  color: #5D4043;
 }
 
 .pack1 p{
@@ -1506,41 +1610,6 @@ video{
 .pack1 span {
   width: 47px;
   height: 10px;
-  font-family: 'Gustavo';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 170%;
-  color: #30171B;
-}
-
-.pack2{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 15px;
-  gap: 65px;
-  width: 392px;
-}
-
-.pack2:nth-child(3){
-  gap: 20px;
-}
-
-.pack2 h3{
-  width: 289px;
-  height: 13px;
-  font-family: Gustavo-Bold;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 170%;
-  color: #5D4043;
-}
-
-.pack2 p{
-  width: 289px;
-  height: 10px;
   font-family: Gustavo-Regular, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1549,23 +1618,12 @@ video{
   color: #30171B;
 }
 
-.pack2 span {
-  width: 47px;
-  height: 10px;
-  font-family: Gustavo-Regular, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 170%;
-  color: #30171B;
-}
-
-.pack2 span:nth-child(1) {
+.pack1 span:nth-child(1) {
   text-decoration:line-through;
   color: #5D4043;
 }
 
-.pack2 .prixtwo{
+.pack1 .prixtwo{
   display: flex;
 }
 

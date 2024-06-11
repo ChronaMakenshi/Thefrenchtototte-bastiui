@@ -14,14 +14,13 @@
                 <div class="item">
                     <img src="{{ asset("image/3.png") }}" alt="Image 3"/>
                 </div>
-
             </div>
             <button class="btn prev"><img src="{{ asset("image/prev.svg") }}" alt="prev"/></button>
             <button class="btn next"><img src="{{ asset("image/next.svg") }}" alt="next"/></button>
             <div class="dots"></div>
         </div>
     </div>
-    <div class="right">
+    <div class="right" id="panier">
         <div class="buy">
             <h2>personnalisez votre tototte</h2>
             <p class="p-2">Vous allez créer la tototte idéale pour vous. À chacun son expérience, à chacun sa
@@ -29,19 +28,19 @@
             <h3>finition</h3>
             <p>Choisissez votre favorite</p>
             <div class="color">
-                <div class="bodycolor">
+                <div class="bodycolor" data-image1="{{ asset("image/1.png") }}" data-image2="{{ asset("image/2.png") }}" data-image3="{{ asset("image/3.png") }}">
                     <div class="circle"></div>
                     <div class="colorcircle"></div>
                 </div>
-                <div class="bodycolor">
+                <div class="bodycolor" data-image1="{{ asset("image/blue1.png") }}" data-image2="{{ asset("image/blue2.png") }}" data-image3="{{ asset("image/blue3.png") }}">
                     <div class="circle"></div>
                     <div class="colorcircle"></div>
                 </div>
-                <div class="bodycolor">
+                <div class="bodycolor" data-image1="{{ asset("image/1.png") }}" data-image2="{{ asset("image/2.png") }}" data-image3="{{ asset("image/3.png") }}">
                     <div class="circle"></div>
                     <div class="colorcircle"></div>
                 </div>
-                <div class="bodycolor">
+                <div class="bodycolor" data-image1="{{ asset("image/1.png") }}" data-image2="{{ asset("image/2.png") }}" data-image3="{{ asset("image/3.png") }}">
                     <div class="circle"></div>
                     <div class="colorcircle"></div>
                 </div>
@@ -49,19 +48,19 @@
             <h3>ornement</h3>
             <p>Choisissez votre pierre précieuse</p>
             <div class="color">
-                <div class="bodycolor">
+                <div class="bodycolor" data-image1="{{ asset("image/blue1.png") }}" data-image2="{{ asset("image/blue2.png") }}" data-image3="{{ asset("image/blue3.png") }}">
                     <div class="circle"></div>
                     <div class="colorcircle1"></div>
                 </div>
-                <div class="bodycolor">
+                <div class="bodycolor" data-image1="{{ asset("image/1.png") }}" data-image2="{{ asset("image/2.png") }}" data-image3="{{ asset("image/3.png") }}">
                     <div class="circle"></div>
                     <div class="colorcircle1"></div>
                 </div>
-                <div class="bodycolor">
+                <div class="bodycolor" data-image1="{{ asset("image/1.png") }}" data-image2="{{ asset("image/2.png") }}" data-image3="{{ asset("image/3.png") }}">
                     <div class="circle"></div>
                     <div class="colorcircle1"></div>
                 </div>
-                <div class="bodycolor">
+                <div class="bodycolor" data-image1="{{ asset("image/black1.png") }}" data-image2="{{ asset("image/black2.png") }}" data-image3="{{ asset("image/black3.png") }}">
                     <div class="circle"></div>
                     <div class="colorcircle1"></div>
                 </div>
@@ -69,21 +68,21 @@
             <h3>pack saveur</h3>
             <p>Choisissez votre pack de saveurs</p>
             <div class="pack">
-                <div class="pack1">
+                <div class="pack1" data-image1="{{ asset("image/black1.png") }}" data-image2="{{ asset("image/black2.png") }}" data-image3="{{ asset("image/black3.png") }}">
                     <div>
                         <h3>Pack Starter</h3>
                         <p>3 saveurs de découverte</p>
                     </div>
                     <span>Offert</span>
                 </div>
-                <div class="pack2">
+                <div class="pack1" data-image1="{{ asset("image/black1.png") }}" data-image2="{{ asset("image/2green.png") }}" data-image3="{{ asset("image/black3.png") }}">
                     <div>
                         <h3>Pack Suçoteur</h3>
                         <p>6 saveurs</p>
                     </div>
                     <span>29€</span>
                 </div>
-                <div class="pack2">
+                <div class="pack1" data-image1="{{ asset("image/black1.png") }}" data-image2="{{ asset("image/2yellow.png") }}" data-image3="{{ asset("image/black3.png") }}">
                     <div>
                         <h3>Pack Suçoteur Pro</h3>
                         <p>12 saveurs + 1 jus de Mynthos</p>

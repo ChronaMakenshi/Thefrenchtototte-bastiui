@@ -4,6 +4,6 @@ import "../js/NavbarSticky";
 import "../js/DivStarhidden";
 import "../js/Carousel";
 import "../js/Savoureusereponsibleimage";
-
+import "../js/CouleurImage"
 
 
